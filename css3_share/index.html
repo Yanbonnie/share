@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/flexible.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>css3_share</title>
+    <script>
+        window.onload = function(){
+            var obtn = document.getElementsByTagName('button')[0];
+            var moveBox = document.getElementById('move');
+            obtn.onclick = function(){
+                moveBox.classList.remove("end");
+                moveBox.classList.add("wrapAction");
+                setTimeout(()=>{
+                    moveBox.classList.remove("wrapAction");
+                    moveBox.classList.add("end");
+                },2000)
+            }
+        }
+    </script>
+</head>
+<body>
+    <button>播放动画</button>
+    <div class="traditional" id="move"></div>
+    <div class="wrapBox">
+        <div class="leftBox"></div>
+        <div class="rightBox"></div>
+    </div>
+</body>
+</html>

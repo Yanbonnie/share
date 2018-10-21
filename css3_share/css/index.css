@@ -1,0 +1,46 @@
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.78125rem; }
+
+.traditional {
+  width: 8.515625rem;
+  height: 7.15625rem;
+  background: url("../images/step1_bg.png");
+  background-size: 8.515625rem auto;
+  margin: 0 auto; }
+  .traditional.end {
+    background-position: 0px -64.40625rem; }
+
+.wrapAction {
+  -webkit-animation: action1 2s steps(10) both;
+  animation: action1 2s steps(10) both; }
+
+@-webkit-keyframes action1 {
+  0% {
+    background-position: 0 0rem; }
+  100% {
+    background-position: 0 -71.5625rem; } }
+@keyframes action1 {
+  0% {
+    background-position: 0 0rem; }
+  100% {
+    background-position: 0 -71.5625rem; } }
+.wrapBox {
+  margin: 0 auto;
+  position: relative;
+  width: 10rem;
+  height: 7.8125rem; }
+  .wrapBox .leftBox {
+    position: absolute;
+    left: 0;
+    width: 5rem;
+    background: green;
+    height: 7.8125rem; }
+  .wrapBox .rightBox {
+    float: right;
+    width: 5rem;
+    background: #ff503f;
+    height: 7.8125rem; }
+
+/*# sourceMappingURL=index.css.map */

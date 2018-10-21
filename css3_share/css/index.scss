@@ -1,0 +1,51 @@
+@function REM($n){
+    @return $n/64*1rem;
+}
+button{
+    display: block;
+    margin: 0 auto;
+    margin-top: REM(50);
+}
+.traditional{
+    width: REM(545);
+    height: REM(458);
+    background: url('../images/step1_bg.png');
+    background-size: REM(545) auto;
+    margin: 0 auto;
+    &.end{
+        background-position: 0px REM(-4122);
+    }
+}
+.wrapAction {
+    -webkit-animation: action1 2s steps(10) both; 
+    animation: action1 2s steps(10) both; 
+    
+}
+@-webkit-keyframes action1 {
+    0% { background-position: 0 0rem; }
+    100% { background-position: 0 REM(-4580); }
+}
+@keyframes action1 {
+    0% { background-position: 0 0rem; }
+    100% { background-position: 0 REM(-4580); }
+}
+
+.wrapBox{
+    margin: 0 auto;
+    position: relative;
+    width: REM(640);
+    height: REM(500);
+    .leftBox{
+        position: absolute;
+        left:0;
+        width: REM(320);
+        background: green;
+        height: REM(500);
+    }
+    .rightBox{
+        float: right;
+        width: REM(320);
+        background: #ff503f;
+        height: REM(500);
+    }
+}
